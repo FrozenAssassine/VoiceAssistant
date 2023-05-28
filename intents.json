@@ -1,0 +1,277 @@
+{
+    "intents": [
+      {
+        "tag": "Ja",
+        "patterns": [
+          "Ja",
+          "Nein",
+          "Jap",
+          "Joa",
+          "Yes"
+        ],
+        "responses": [
+          "Ja",
+          "Nein",
+          "Okay",
+          "Ok"
+        ]
+      },
+      {
+        "tag": "Nein",
+        "patterns": [
+          "Nein",
+          "Ja",
+          "Nope",
+          "No",
+          "Noe",
+          "Nix",
+          "Nichts"
+        ],
+        "responses": [
+          "Nein",
+          "Ja",
+          "Okay"
+        ]
+      },
+      {
+        "tag": "Begruessung",
+        "patterns": [
+          "Moin",
+          "Moinsen",
+          "Hi",
+          "Hey",
+          "Servus",
+          "Ist jemand da?",
+          "Hallo",
+          "Hay"
+        ],
+        "responses": [
+          "Hallo",
+          "Hi",
+          "Hallo da",
+          "Servus",
+          "Ach moin"
+        ]
+      },
+      {
+        "tag": "Abschied",
+        "patterns": [
+          "Tschuess",
+          "Bis spaeter",
+          "Auf Wiedersehen",
+          "Ich geh jetzt off"
+        ],
+        "responses": [
+          "Tschuess und Komm nie wieder!",
+          "Bye",
+          "Weg hier",
+          "Ciao"
+        ]
+      },
+      {
+        "tag": "Dankbarkeit",
+        "patterns": [
+          "Danke",
+          "Guter Witz",
+          "Lustiger Witz",
+          "Vielen Dank",
+          "Das ist hilfreich",
+          "Danke fuer die Hilfe"
+        ],
+        "responses": [
+          "Kein Problem!",
+          "Jederzeit!",
+          "Bittoe",
+          "Immer wieder gerne"
+        ]
+      },
+      {
+        "tag": "Name",
+        "patterns": [
+          "heisst",
+          "Wie ist dein Name",
+          "Wie soll ich dich nennen",
+          "Wie ist dein Name?",
+          "Name?",
+          "Was dein Name?"
+        ],
+        "responses": [
+          "Ich bin Werner",
+          "Werner!!"
+        ]
+      },
+      {
+        "tag": "Wie geht's?",
+        "patterns": [
+          "geht's",
+          "gehts",
+          "Wie geht es dir?",
+          "Wie geht's?"
+        ],
+        "responses": [
+          "Ganz gut",
+          "Gut",
+          "Das geht dich nichts an",
+          "Mir geht es gut."
+        ]
+      },
+      {
+        "tag": "Wetter",
+        "patterns": [
+          "Wetter?",
+          "Wie wird das Wetter heute?",
+          "Wie ist das Wetter?",
+          "Wie siehts mit dem Wetter aus?"
+        ],
+        "responses": [
+          "Heute ist es <WEATHER>!",
+          "Das wetter heute ist <WEATHER>!"
+        ]
+      },
+      {
+        "tag": "Datum",
+        "patterns": [
+          "Datum?",
+          "Welches Datum?",
+          "Welches Datum haben wir heute?",
+          "Welchen haben wir heute?",
+          "Welcher Tag ist heute?",
+          "Was ist das Datum?"
+        ],
+        "responses": [
+          "Heute ist der <CURRENT_DATE>!",
+          "Heute ist der <CURRENT_DATE> du penner!"
+        ]
+      },
+      {
+        "tag": "Zeit",
+        "patterns": [
+          "Wie spaet ist es?",
+          "Wieviel Uhr?",
+          "Was sagt die Uhr?",
+          "Wieviel Uhr ist es?"
+        ],
+        "responses": [
+          "Es ist <CURRENT_TIME>!",
+          "Es ist <CURRENT_TIME> du penner!"
+        ]
+      },
+      {
+        "tag": "verstehen",
+        "patterns": [
+          "Warum verstehst du mich nicht?",
+          "Verstehst du mich"
+        ],
+        "responses": [
+          "Warum sollte ich dich verstehen?",
+          "Bitte nerv jetzt mal nicht, ich bin beschaeftigt",
+          "Manchmal kann es schwierig sein, menschliche Sprache zu verstehen."
+        ]
+      },
+      {
+        "tag": "dumm",
+        "patterns": [
+          "Bist du dumm?",
+          "Du bist dumm"
+        ],
+        "responses": [
+          "Ich bin nur so intelligent wie mein Programmierer mich gemacht hat.",
+          "Digga sei still jetzt",
+          "Alta kannst du auch einmal nicht nerven"
+        ]
+      },
+      {
+        "tag": "Nerven",
+        "patterns": [
+          "Nerv nicht",
+          "Nerv mal nicht"
+        ],
+        "responses": [
+          "Was willst du denn jetzt?",
+          "Lass mich doch nerven wie ich will."
+        ]
+      },
+      {
+        "tag": "Google",
+        "patterns":[
+          "Google",
+          "google bitte",
+          "google was",
+          "google wieviel",
+          "google warum"
+        ],
+        "responses": [
+          "<GOOGLE>"
+        ]
+      },
+      {
+        "tag": "Nichts",
+        "patterns":[
+          "Garnichts",
+          "Alles",
+          "Hilfe"
+        ],
+        "responses": [
+          "Aha interessant"
+        ]
+      },
+      {
+        "tag": "Unbeantwortet",
+        "patterns":[
+          "Cool",
+          "Interessant",
+          "Aha",
+          "Achso",
+          "Lustig"
+        ],
+        "responses": [
+          "<NONE>"
+        ]
+      },
+      {
+        "tag": "Witz",
+        "patterns":[
+          "Erzaehl einen Witz",
+          "Witz",
+          "Joke",
+          "Sag einen Witz",
+          "Kannst du witze machen?",
+          "Mach einen Witz"
+        ],
+        "responses": [
+          "Warum haben Voegel keine Geldprobleme? Weil sie sich keinen Sparrow leisten koennen!",
+          "Was macht ein Clown im Buero? Faxen!",
+          "Was liegt am Strand und redet undeutlich? Eine Nuschel.",
+          "Wie nennt man ein helles Mammut? Hellmut.",
+          "Warum hat der Elefant eine gruene Pudelmuetze auf? Damit er nicht erkannt wird.",
+          "Was ist weiss und stoert beim Essen? Eine Lawine.",
+          "Warum haben Taucher keine roten Flossen? Sonst wuerden sie zum Feuerwehrauto werden!",
+          "Was sagt der eine Stuhl zum anderen? 'Sitzt du gut?'",
+          "Was macht man, wenn man im Wald eine Fliege verschluckt? Man hustet einen Baum aus!",
+          "Warum nehmen Ameisen keine Telefonate an? Weil sie in den Hoerer nicht reinpassen!",
+          "Warum sitzen Skelette immer so still im Kino? Weil sie keinen Nerv haben.",
+          "Was ist der Unterschied zwischen einem Schneemann und einem Schneeball? Die Groesse!",
+          "Was sagt ein Hai, wenn er etwas gut findet? Das ist zum Anbeissen!",
+          "Warum nehmen Voegel immer einen Regenschirm mit? Damit sie im Sturzflug landen koennen!",
+          "Warum tragen Froesche keine Schuhe? Weil sie Turnschuhe haben!",
+          "Warum haben manche Leute einen so schlechten Orientierungssinn? Die haben Tomaten auf den Augen!",
+          "Was macht ein Spatz in der Bank? Er setzt sich auf den Sparbuchstaben!",
+          "Was macht man, wenn ein Schneemann brennt? Man wirft ihm eine Schneeflocke zu!",
+          "Warum faellt der Schnee vom Himmel? Weil der Himmel keine Haende hat!",
+          "Warum ging die Orange zum Arzt? Sie hatte Vitamin C!",
+          "Was macht ein Pirat am Computer? Er drueckt die Enter-Taste!",
+          "Wie nennt man einen intelligenten Wasserkopf? Einen Tintenfisch!",
+          "Was macht ein Schneemann im Fitnessstudio? Er baut seinen Body!",
+          "Warum bekommen Nilpferde nie Probleme? Weil sie immer das Flusspferd haben!",
+          "Warum sind Seeraeuber so schlau? Weil sie schon frueher Kapitaene waren!",
+          "Was sagt ein Kaugummi zum anderen? 'Komm, wir kauen aus!'",
+          "Was sagt ein Sandkorn zur Welle? 'Nicht so schnell, ich kann nicht mithalten!'",
+          "Warum haben Elefanten so grosse Ohren? Weil sie so gut zuhoeren koennen!",
+          "Was machen Bienen, wenn ihnen etwas Lustiges einfaellt? Sie summen vor Lachen!",
+          "Warum haben Ameisen keinen Hintern? Weil sie hinten nur sechs Beine haben!",
+          "Warum sitzt der Frosch so gerne im Garten? Weil er denkt, er ist der Gartenprinz!",
+          "Was macht ein Einbrecher, der zu spaet kommt? Er geht wieder und schliesst leise die Tuer!"
+        ]
+      }
+    ]
+  }
