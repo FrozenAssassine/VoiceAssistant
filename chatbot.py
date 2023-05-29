@@ -3,12 +3,10 @@ import numpy as np
 from tensorflow import keras
 import pickle
 from datetime import datetime
-import requests
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import wikipediaapi
-import re
 
 #download stopwords and sentence splitter:
 nltk.download('stopwords')
@@ -18,16 +16,18 @@ wiki_wiki = wikipediaapi.Wikipedia('de')
 stop_words = set(stopwords.words('german'))
 max_len = 100
 
+stop_words.remove("wie")
+
 with open("intents.json") as file:
     data = json.load(file)
 
 # load trained model
 model = keras.models.load_model('chat_model')
 
-with open('tokenizer.pickle', 'rb') as handle:
+with open('./chat_model/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
-with open('label_encoder.pickle', 'rb') as enc:
+with open('./chat_model/label_encoder.pickle', 'rb') as enc:
     lbl_encoder = pickle.load(enc)
 
 def search_wikipedia(topic):
@@ -61,8 +61,7 @@ def preprocess_question(question):
     print(f"Question: {question} -> {filtered_text}")
     return filtered_text
 
-def chat(question):
-    
+def chat(question):    
     result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([preprocess_question(question)]),
                                             truncating='post', maxlen=max_len))
     

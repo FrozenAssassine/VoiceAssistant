@@ -1,14 +1,21 @@
 import speech_recognition as sr
-import speak
 import chatbot as chat
+import pyttsx3;
+
+engine = pyttsx3.init()
+engine.setProperty('rate', 160)
 
 def getInputData(speaktext = ""):
     if len(speaktext) > 0:
         speak.speakText(speaktext)
 
     audio = r.listen(source)
-    return r.recognize_google(audio, language="de-DE").lower()
-            
+    return r.recognize_google(audio, language="de-DE").lower()         
+
+def speakText(text):
+    engine.setProperty('voice', 'german')
+    engine.say(text)
+    engine.runAndWait()
 
 r = sr.Recognizer()
 with sr.Microphone() as source:
@@ -20,7 +27,7 @@ with sr.Microphone() as source:
                 print("Werner hört zu!")
                 response = chat.chat(text[text.index("werner") + 6:])
                 print(f"> {response}")
-                speak.speakText(response)
+                speakText(response)
 
         except sr.UnknownValueError:
             print("Could not understand audio!")
