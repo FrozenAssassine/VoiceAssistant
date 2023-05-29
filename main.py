@@ -1,13 +1,13 @@
 import speech_recognition as sr
 import chatbot as chat
-import pyttsx3;
+import pyttsx3
 
 engine = pyttsx3.init()
 engine.setProperty('rate', 160)
 
 def getInputData(speaktext = ""):
     if len(speaktext) > 0:
-        speak.speakText(speaktext)
+        speakText(speaktext)
 
     audio = r.listen(source)
     return r.recognize_google(audio, language="de-DE").lower()         
