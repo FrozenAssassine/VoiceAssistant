@@ -1,0 +1,279 @@
+{
+  "intents": [
+    {
+      "tag": "Yes",
+      "patterns": [
+        "Yes",
+        "No",
+        "Yep",
+        "Sure",
+        "Yeah"
+      ],
+      "responses": [
+        "Yes",
+        "No",
+        "Okay",
+        "Ok"
+      ]
+    },
+    {
+      "tag": "No",
+      "patterns": [
+        "No",
+        "Yes",
+        "Nope",
+        "No",
+        "Nah",
+        "Nothing",
+        "None"
+      ],
+      "responses": [
+        "No",
+        "Yes",
+        "Okay"
+      ]
+    },
+    {
+      "tag": "Greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Greetings",
+        "Is anyone there?",
+        "Hi there"
+      ],
+      "responses": [
+        "Hello",
+        "Hi",
+        "Hello there",
+        "Greetings",
+        "Oh, hi"
+      ]
+    },
+    {
+      "tag": "Farewell",
+      "patterns": [
+        "Goodbye",
+        "See you later",
+        "Farewell",
+        "I'm signing off"
+      ],
+      "responses": [
+        "Goodbye and never come back!",
+        "Bye",
+        "Away with you",
+        "Ciao"
+      ]
+    },
+    {
+      "tag": "Gratitude",
+      "patterns": [
+        "Thank you",
+        "Good one",
+        "Funny joke",
+        "Thanks a lot",
+        "That's helpful",
+        "Thanks for the help"
+      ],
+      "responses": [
+        "No problem!",
+        "Anytime!",
+        "You're welcome",
+        "Always happy to help"
+      ]
+    },
+    {
+      "tag": "Name",
+      "patterns": [
+        "called",
+        "What's your name",
+        "What should I call you",
+        "What is your name?",
+        "Name?",
+        "What's your name?"
+      ],
+      "responses": [
+        "I am Werner",
+        "I am Werner!"
+      ]
+    },
+    {
+      "tag": "How are you?",
+      "patterns": [
+        "are you",
+        "are you",
+        "How are you?",
+        "How are you?"
+      ],
+      "responses": [
+        "Quite well",
+        "Good",
+        "That's none of your business",
+        "I'm doing well."
+      ]
+    },
+    {
+      "tag": "Weather",
+      "patterns": [
+        "Weather?",
+        "What's the weather today?",
+        "How is the weather?",
+        "What's the weather like?"
+      ],
+      "responses": [
+        "Today it is <WEATHER>!",
+        "The weather today is <WEATHER>!"
+      ]
+    },
+    {
+      "tag": "Date",
+      "patterns": [
+        "Date?",
+        "What's the date?",
+        "What's today's date?",
+        "What day is it today?",
+        "What is the date?"
+      ],
+      "responses": [
+        "Today is <CURRENT_DATE>!",
+        "Today is <CURRENT_DATE>, you jerk!"
+      ]
+    },
+    {
+      "tag": "Time",
+      "patterns": [
+        "What time is it?",
+        "What's the time?",
+        "What does the clock say?",
+        "What time is it now?"
+      ],
+      "responses": [
+        "It is <CURRENT_TIME>!",
+        "It is <CURRENT_TIME>, you jerk!"
+      ]
+    },
+    {
+      "tag": "Understand",
+      "patterns": [
+        "Why don't you understand me?",
+        "Do you understand me"
+      ],
+      "responses": [
+        "Why should I understand you?",
+        "Please don't bother now, I'm busy",
+        "Sometimes it can be difficult to understand human language."
+      ]
+    },
+    {
+      "tag": "Stupid",
+      "patterns": [
+        "Are you dumb?",
+        "You are dumb"
+      ],
+      "responses": [
+        "I am only as intelligent as my programmer made me.",
+        "Dude, be quiet now",
+        "Dude, can't you stop annoying for once"
+      ]
+    },
+    {
+      "tag": "Annoyance",
+      "patterns": [
+        "Stop annoying",
+        "Don't annoy"
+      ],
+      "responses": [
+        "What do you want now?",
+        "Let me annoy as I please."
+      ]
+    },
+    {
+      "tag": "Google",
+      "patterns": [
+        "Google",
+        "please google",
+        "google what",
+        "google how much",
+        "google why"
+      ],
+      "responses": [
+        "<GOOGLE>"
+      ]
+    },
+    {
+      "tag": "Nothing",
+      "patterns": [
+        "Nothing",
+        "Everything",
+        "Help"
+      ],
+      "responses": [
+        "Aha, interesting"
+      ]
+    },
+    {
+      "tag": "Unanswered",
+      "patterns": [
+        "Cool",
+        "Interesting",
+        "Aha",
+        "Oh, I see",
+        "Funny"
+      ],
+      "responses": [
+        "<NONE>"
+      ]
+    },
+    {
+      "tag": "Joke",
+      "patterns": [
+        "Tell a joke",
+        "Joke",
+        "Joke",
+        "Tell a joke",
+        "Can you make jokes?",
+        "Make a joke"
+      ],
+      "responses": [
+        "Why did the computer go to therapy? It had too many bytes of emotional baggage!",
+        "How does a penguin build its house? Igloos it together!",
+        "What's a vampire's favorite fruit? A blood orange!",
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "How do you organize a space party? You planet!",
+        "Why did the robot go on a diet? It had too many bytes!",
+        "What did the sushi say to the bee? Wasabi!",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "What do you call a fish wearing a crown? A kingfish!",
+        "Why did the bicycle fall over? It was two-tired!",
+        "How do you catch a squirrel? Climb a tree and act like a nut!",
+        "What's a skeleton's least favorite room in the house? The living room!",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "How do you organize a fantastic space party? You planet!",
+        "Why did the math book look sad? Because it had too many problems!",
+        "What did the grape do when it got stepped on? Nothing, but it let out a little wine!",
+        "Why don't skeletons fight each other? They don't have the guts!",
+        "What did one hat say to the other? Stay here, I'm going on ahead!",
+        "Why did the coffee file a police report? It got mugged!",
+        "What do you call a fake noodle? An impasta!",
+        "Why did the stadium get hot after the game? All of the fans left!",
+        "What did the janitor say when he jumped out of the closet? Supplies!",
+        "Why did the banana go to the doctor? It wasn't peeling well!",
+        "How do you catch a squirrel? Climb a tree and act like a branch!",
+        "What did one wall say to the other wall? 'I'll meet you at the corner!'",
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "What do you call a fish with no eyes? Fsh!",
+        "Why don't eggs tell each other secrets? They might crack up!",
+        "What did the grape do when it got stepped on? Nothing, but it let out a little wine!",
+        "Why did the bicycle fall over? It was two-tired!",
+        "What did one plate say to another plate? Tonight, dinner's on me!",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+        "How do you organize a space party? You planet!",
+        "What do you call fake spaghetti? An impasta!",
+        "Why did the scarecrow become a successful politician? Because he was outstanding in his field!",
+        "What's a vampire's favorite fruit? A blood orange!",
+        "Why did the math book look sad? Because it had too many problems!"
+      ]
+    }
+  ]
+}
